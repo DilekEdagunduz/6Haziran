@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="1" class="h1"></h1>
+   <h2 id="2" class="h2"></h2>
+   <label >Herhangi sayı yaz</label>
+   <input type="text" id="fname" name="fname">
+   
+  <button >Click me</button>
+</body>
+<script>
+    //4) Ekrana bir input, bir h1 ve bir h2 elementi ve bir buton koy. Butona tıkladığında inputtaki sayının karesini h1 e, küpünü h2 ye yazsın.
+   $("button").click(function(){
+    var texttonumber =Number(document.getElementById("fname").value);
+    document.getElementById("1").innerHTML=texttonumber*texttonumber; 
+    document.getElementById("2").innerHTML=texttonumber*texttonumber*texttonumber; 
+    
+   })
+</script>
+</html>
